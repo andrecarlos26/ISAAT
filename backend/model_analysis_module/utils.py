@@ -13,9 +13,6 @@ def set_seed(seed: int | None) -> None:
         tf.random.set_seed(seed)
         random.seed(seed)
 
-import os
-import uuid
-
 def save_summary_txt(info: list[str]) -> str:
     """
     Receives a list of strings, creates (if necessary) the 'txt' folder in the project root,
