@@ -2,8 +2,7 @@ import os
 import requests
 import json
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY",
-    "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")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_URL     = "https://openrouter.ai/api/v1/chat/completions"
 
 BASE_PROMPT = """Below is information about the decision-making process of a Multi-Layer Perceptron (MLP) model, which attempts to predict how long it will take before system memory is exhausted.
